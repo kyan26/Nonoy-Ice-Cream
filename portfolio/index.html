@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ryan Paglinawan | Aspiring Front-End Developer</title>
+  <meta name="description" content="Portfolio of Ryan Paglinawan, a third-year BSIT student at Filamer Christian University and aspiring Junior Front-End Developer.">
+  <meta property="og:title" content="Ryan Paglinawan | Aspiring Front-End Developer">
+  <meta property="og:description" content="Clean, responsive, user-friendly websites. Skills, projects, and documentation.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a href="#home" class="brand">Ryan Paglinawan</a>
+      <ul id="navLinks" class="nav-links">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#documentation">Documentation</a></li>
+        <li><a class="nav-link" href="#about">About Me</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <button id="menuBtn" class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </nav>
+    <ul id="mobileMenu" class="mobile-menu" hidden>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#documentation">Documentation</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <main id="main">
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="badge"><span class="dot"></span> BSIT, 3rd Year at Filamer Christian University</p>
+          <h1>Ryan Paglinawan</h1>
+          <p class="role">Aspiring Front-End Developer</p>
+          <p class="pitch">I build clean, responsive, user-friendly websites and turn ideas into working digital experiences.</p>
+          <div class="btn-row">
+            <a data-resume class="btn btn-primary" href="#">Download Resume</a>
+            <a class="btn btn-ghost" href="#projects">View Projects</a>
+          </div>
+          <div class="hero-links">
+            <a data-link="github" class="text-link" href="#">GitHub</a>
+            <a data-link="linkedin" class="text-link" href="#">LinkedIn</a>
+          </div>
+        </div>
+        <div class="photo-wrap">
+          <div class="photo-card">
+            <img src="assets/profile.jpg" alt="Portrait of Ryan Paglinawan" width="800" height="1000">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Technical Skills</h2>
+        <p class="lead">Grouped by domain. Labels describe how comfortable I am with each tool, not a score.</p>
+        <div class="legend">
+          <span class="chip chip-comfortable">Comfortable</span>
+          <span class="chip chip-familiar">Familiar</span>
+          <span class="chip chip-learning">Currently Learning</span>
+        </div>
+        <div id="skillsGrid" class="grid-2"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <p class="lead">Two case studies. Items in dashed boxes are placeholders I will replace with verified details.</p>
+        <div id="projectList" class="project-list"></div>
+      </div>
+    </section>
+
+    <!-- DOCUMENTATION -->
+    <section id="documentation" class="section">
+      <div class="container">
+        <h2>Technical Documentation</h2>
+        <p class="lead">Written documents that show how I communicate technical information.</p>
+        <div id="docGrid" class="doc-list"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section-alt">
+      <div class="container about-grid">
+        <div>
+          <h2>About Me</h2>
+          <p class="about-lead">I'm a third-year Information Technology student who likes building things for the web. I'm adaptable, versatile, and hardworking, and I enjoy turning a rough idea into something people can actually use.</p>
+          <p class="about-more">Outside of coding, I'm interested in technology, games, and anime.</p>
+        </div>
+        <div class="grid-2 tight">
+          <article class="card"><h3>Education</h3><p class="body-sm">BS Information Technology (3rd year), Filamer Christian University. Senior High School, TVL-ICT track, graduated 2024.</p></article>
+          <article class="card"><h3>Technical interests</h3><p class="body-sm">Front-end development, responsive design, Python and Django, and databases.</p></article>
+          <article class="card"><h3>Career goals</h3><p class="body-sm">Work as a Junior Front-End Developer and grow into a well-rounded software engineer.</p></article>
+          <article class="card"><h3>Strengths</h3><p class="body-sm">Adaptable, versatile, and hardworking. I pick up new tools quickly and keep going until the problem is solved.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contact</h2>
+          <p class="lead">I'm open to internship and junior front-end opportunities. Send me a message.</p>
+          <ul class="contact-list">
+            <li><span>Email</span><a data-link="email" href="#">your.email@example.com</a></li>
+            <li><span>LinkedIn</span><a data-link="linkedin" href="#">LinkedIn profile</a></li>
+            <li><span>GitHub</span><a data-link="github" href="#">GitHub profile</a></li>
+          </ul>
+        </div>
+        <form id="contactForm" class="card form" novalidate>
+          <div class="form-row">
+            <label class="field">Full Name<input name="name" type="text" required autocomplete="name"></label>
+            <label class="field">Email Address<input name="email" type="email" required autocomplete="email"></label>
+          </div>
+          <label class="field">Subject<input name="subject" type="text" required></label>
+          <label class="field">Message<textarea name="message" rows="5" required></textarea></label>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p id="formStatus" class="status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    &copy; <span id="year"></span> Ryan Paglinawan. BSIT Final Project, Filamer Christian University.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
